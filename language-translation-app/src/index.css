@@ -1,19 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
-body {
+body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #00DBDE, #FC00FF);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+input, select, button {
+  font-size: 16px;
+  padding: 8px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #6200EA;
+  color: white;
+}
+
+button:hover {
+  background-color: #3700B3;
 }

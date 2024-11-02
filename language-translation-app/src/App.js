@@ -1,18 +1,16 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import TranslateForm from './components/TranslateForm';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="relative min-h-screen">
-      <div className="animate-gradient"></div>
-      <div className="relative z-10">
-        <Header />
-        <TranslateForm />
-        <Footer />
-      </div>
+    <div className="App">
+      <header className="App-header">
+        <h1>Language Translator</h1>
+      </header>
+      <TranslateForm />
+      <Footer />
     </div>
   );
 }
